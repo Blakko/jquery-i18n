@@ -1,4 +1,3 @@
-
 About
 -----
 
@@ -123,75 +122,6 @@ $.i18n.setDictionary(
     }
 );
 ```
-
-Building From Scratch
----------------------
-
-You can build the regular, un-minified version simply by running _ant_:
-
-```bash
-$ ant
-Buildfile: build.xml
-
-jquery.i18n:
-     [echo] Building ./jquery.i18n.js
-     [echo] ./jquery.i18n.js built.
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-```
-
-Before you can build the minified version yourself, you'll need to download the [Google Closure Compiler](http://closure-compiler.googlecode.com/files/compiler-latest.zip) and put it in a folder called _build_:
-
-```bash
-$ mkdir build
-$ cd build
-$ wget http://closure-compiler.googlecode.com/files/compiler-latest.zip
-$ unzip compiler-latest.zip
-```
-
-Once you have the compiler, you can build the minified version by running _ant min_:
-
-```bash
-$ ant min
-Buildfile: build.xml
-
-jquery.i18n:
-     [echo] Building ./jquery.i18n.js
-     [echo] ./jquery.i18n.js built.
-
-min:
-     [echo] Building ./jquery.i18n.min.js
-    [apply] Applied java to 1 file and 0 directories.
-   [delete] Deleting: /Users/dave/Documents/Code/jquery/jquery-i18n/tmpmin
-     [echo] ./jquery.i18n.min.js built.
-
-BUILD SUCCESSFUL
-Total time: 1 second
-```
-
-
-Change history
------------
-
-* **Version 1.0.0 (2012-10-14)** : 1.0 release - addition of a test suite (huge thanks to [alexaitken](https://github.com/alexaitken)), plus a major cleanup.
-
-Bug Reports
------------
-
-If you come across any problems, please [create a ticket](https://github.com/recurser/jquery-i18n/issues) and we'll try to get it fixed as soon as possible.
-
-
-Contributing
-------------
-
-Once you've made your commits:
-
-1. [Fork](http://help.github.com/fork-a-repo/) jquery-i18n
-2. Create a topic branch - `git checkout -b my_branch`
-3. Push to your branch - `git push origin my_branch`
-4. Create a [Pull Request](http://help.github.com/pull-requests/) from your branch
-5. That's it!
 
 
 Author
